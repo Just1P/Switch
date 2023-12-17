@@ -1,0 +1,119 @@
+:root {
+  --color-white: #dfdfdf;
+  --color-cream: #e7e2d8;
+  --color-grey: #2f3731;
+  --color-black: #252525;
+  --color-white-text: #3a3a3a;
+  --color-cream-text: #3c3429;
+  --color-grey-text: #e0ebd2;
+  --color-black-text: #e3e3e3;
+  --color-white-actions-bar: #fff;
+  --color-cream-actions-bar: #f7f5f0;
+  --color-grey-actions-bar: #39453d;
+  --color-black-actions-bar: #3a3a3a;
+  --size-small-subtitle: 16px;
+  --size-small-title: 32px;
+  --size-medium-subtitle: 20px;
+  --size-medium-title: 36px;
+  --size-large-subtitle: 24px;
+  --size-large-title: 42px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.playground {
+  width: 100%;
+  padding: 40px;
+  min-height: 400px;
+  background-color: var(--color-white);
+  color: var(--color-white-text);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+}
+
+/* PREVIEW */
+
+.title {
+  font-size: var(--size-medium-title);
+}
+
+.subtitle {
+  font-size: var(--size-medium-subtitle);
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ACTIONS */
+
+.actions-bar {
+  display: flex;
+  gap: 16px;
+  border-radius: 50px;
+  background-color: var(--color-white-actions-bar);
+  padding: 32px;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/* COLORS */
+.button[data-value="white"] {
+  background-color: var(--color-white);
+}
+.button[data-value="cream"] {
+  background-color: var(--color-cream);
+}
+.button[data-value="grey"] {
+  background-color: var(--color-grey);
+}
+.button[data-value="black"] {
+  background-color: var(--color-black);
+}
+
+/* SIZE */
+.button[data-value="small"] {
+  font-size: var(--size-small-subtitle);
+}
+.button[data-value="medium"] {
+  font-size: var(--size-medium-subtitle);
+}
+.button[data-value="large"] {
+  font-size: var(--size-large-subtitle);
+}
