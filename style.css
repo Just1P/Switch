@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Eloquia;
+  src: url(./assets/fonts/Typekiln\ -\ EloquiaDisplay-ExtraBold.otf);
+  font-weight : normal;
+  font-style: normal;
+}
+
 :root {
   --color-white: #dfdfdf;
   --color-cream: #e7e2d8;
@@ -35,6 +42,7 @@ body {
   padding: 32px;
   justify-content: center;
   align-items: center;
+  font-family: "Eloquia", sans-serif;
 }
 
 .playground {
